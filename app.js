@@ -167,6 +167,7 @@ app.post("/submit", function(req,res){
   findd();
 })
 
-app.listen(3000, function () {
-  console.log("CHALU HOGYA BC!");
+const port = process.env.port || 4000;
+app.listen(port, function () {
+  console.log("CHALU HOGYA BC! at 4000.");
 });
